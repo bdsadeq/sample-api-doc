@@ -5,7 +5,9 @@
 By using the following endpoint, URL is formed by baseurl + endpoint and API communication is performed.
 
 ### To import initial data
+``` bash
 $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
+```
 
 ## Main endpoints
 
@@ -75,7 +77,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 1. HTTP_200_OK ----- success
 2. HTTP_400_BAD_REQUEST ----- Required fields not given 
 
-``` json
+```json
 {
     "token": "2064c54f7d0180c2867f233ece156bc5a8715330",
     "id": 1,
@@ -116,7 +118,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 1. HTTP_200_OK ----- success
 2. HTTP_400_BAD_REQUEST ----- Required fields not given 
 
-``` json
+```json
 {
     "id": 3,
     "username": "Mr Asad",
@@ -147,7 +149,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
  {
  }
 ```
@@ -176,7 +178,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
  {
     "page": 1,
     "data": [        
@@ -252,7 +254,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
 [
     {
         "id": 1,
@@ -302,7 +304,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
  {
     "page": 1,
     "total_count":1222,
@@ -353,7 +355,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
 {
     "single": {
         "other_discounts_and_rebates": -0.772358074482071,
@@ -399,7 +401,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
 {
     "id": 410,
     "invoice_price": 10943.338897936,
@@ -439,7 +441,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
  {
     "page": 1,
     "data": [        
@@ -479,7 +481,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
 {     
      97.009
 }
@@ -509,7 +511,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
 {
     "data": [
         {
@@ -555,7 +557,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
 {
     "id": 4,
     "unique_metarial": 993,
@@ -696,7 +698,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
 {
     "data": [
         {
@@ -756,7 +758,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
 {
     "data": [
         "Customer SoldTo 1687",
@@ -794,7 +796,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
 {
     "data": [  
       {
@@ -830,7 +832,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
 {
     "sales_by_profit_center": [
         {
@@ -933,7 +935,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
 {
     "id": 2,
     "year": 2018,
@@ -965,7 +967,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
  
 ```
 
@@ -991,7 +993,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
 {
     "data": [
         {
@@ -1030,7 +1032,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
 {
     "page": 1,
     "limit": 10,
@@ -1076,7 +1078,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
 {
     "data": [
         {
@@ -1193,7 +1195,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 1. HTTP_200_OK ----- success 
 
-``` json
+```json
 {
     "total_count": 6347,
     "data": [
