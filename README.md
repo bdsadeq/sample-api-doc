@@ -1,5 +1,4 @@
-
-#Pricing Governance Systems-API (Last Update : 16 November,2018)
+# Pricing Governance Systems-API (Last Update : 16 November,2018)
 
 ## Base url: http://127.0.0.1:8000/api/
 
@@ -54,7 +53,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **POST  /signin**
 
-###### params
+#### params
 ```json
 {
    "username": "Mr Asad",
@@ -69,7 +68,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | password      | true | |
 
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -89,7 +88,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **POST  /new-user**
 
-###### params
+#### params
 ```json
 {
    "username": "Mr Asad",
@@ -110,7 +109,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | type      | false  | 1= General User, 2= Account rep, 3= System Administrative |
 
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -129,7 +128,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **POST  /upload-file**
 
-###### params
+#### params
 ```json
 {
    "file": "File object" 
@@ -142,7 +141,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | file      | true | | 
 
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -154,7 +153,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 ```
 ### HTTP REQUEST :  **GET  /get-file-data**
 
-###### params
+#### params
 ```json
 {
    "page": 1,
@@ -171,7 +170,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | limit     | false | | 
 
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -230,7 +229,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **GET  /get-scatterplot-data**
 
-###### params
+#### params
 ```json
 { 
    "year":2012 ,
@@ -247,7 +246,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | product_family| false | | 
 
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -277,7 +276,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **GET  /get-paginated-scatterplot-data**
 
-###### params
+#### params
 ```json
 {
    "year":2012 ,
@@ -297,7 +296,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | limit      | false | | 
 
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -329,7 +328,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 ```
 ### HTTP REQUEST :  **GET  /get-waterfall-data**
 
-###### params
+#### params
 ```json
 {
    "page": 1,
@@ -348,7 +347,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | product      | true | | 
 
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -383,7 +382,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 ```
 ### HTTP REQUEST :  **GET  /get-waterfall-data/id**
 
-###### params
+#### params
 ```json
 {
    "page": 1 
@@ -394,7 +393,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | parameter | is required | comment |
 | :---------: | :---: | :-----------: |
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -416,7 +415,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **GET  /get-customer-scatterplot-data**
 
-###### params
+#### params
 ```json
 {
    "year": 2016 ,
@@ -434,7 +433,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | sold_to_region | false | | 
 
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -462,7 +461,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **GET  /get-progress**
 
-###### params
+#### params
 ```json
 {
    
@@ -474,7 +473,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | :---------: | :---: | :-----------: | 
 
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -489,7 +488,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **GET  /get-paginated-pocket-price-band-histogram**
 
-###### params
+#### params
 ```json
 {
     "year": 2018,
@@ -504,7 +503,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | limit      | false | | 
 
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -536,7 +535,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **GET  /dashboard-data**
 
-###### params
+#### params
 ```json
 {
    "year":2000,
@@ -550,7 +549,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | year      | true | | 
 | number_of_top_data  | false | | 
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -677,7 +676,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **GET  /get-scatterplot-calculated-data**
 
-###### params
+#### params
 ```json
 {
    "year": 2018,
@@ -691,7 +690,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | year      | true  | |
 | limit     | false | |
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -733,7 +732,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **GET  /get-unique-customer**
 
-###### params
+#### params
 ```json
 {
    "year": 2018,
@@ -751,7 +750,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | limit     | false | |
 | keyword     | false | |
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -771,7 +770,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **GET  /get-unique-product**
 
-###### params
+#### params
 ```json
 {
     "year": 2018,
@@ -789,7 +788,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | limit     | false | |
 | keyword     | false | |
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -813,7 +812,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **GET  /get-piechart**
 
-###### params
+#### params
 ```json
 {
     "year": 2018 
@@ -825,7 +824,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | :---------: | :---: | :-----------: | 
 | year      | true  | | 
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -916,7 +915,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **GET  /get-year-info
 
-###### params
+#### params
 ```json
 {
     "year": 2018 
@@ -928,7 +927,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | :---------: | :---: | :-----------: | 
 | year      | true  | | 
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -946,7 +945,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **GET  /change-data-status**
 
-###### params
+#### params
 ```json
 {
     "year_id": 4,
@@ -960,7 +959,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | year_id      | true  | | 
 | status      | true  | # 0= draft, 1= Active, 2= Pending | 
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -972,7 +971,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **GET  /all-active-year**
 
-###### params
+#### params
 ```json
 {
     "page": 4,
@@ -986,7 +985,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | page      | false  | | 
 | limit      | false  | | 
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -1011,7 +1010,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **GET  /get-draft-active-year**
 
-###### params
+#### params
 ```json
 {
     "page": 4,
@@ -1025,7 +1024,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | page      | false  | | 
 | limit      | false  | | 
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -1057,7 +1056,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **GET  /get-histogram-diagram**
 
-###### params
+#### params
 ```json
 { 
     "threshold": 10,
@@ -1071,7 +1070,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | threshold      | false  | | 
 | year      | True  | | 
 
-###### output
+#### output
 
 ### possible response list:
 
@@ -1168,7 +1167,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 
 ### HTTP REQUEST :  **GET  /calculation-data**
 
-###### params
+#### params
 ```json
 { 
     "page": 10,
@@ -1188,7 +1187,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 | ceiling_percentage_threshold      | false  | default 110 | 
 | year      | True  | | 
 
-###### output
+#### output
 
 ### possible response list:
 
