@@ -5,7 +5,8 @@
 By using the following endpoint, URL is formed by baseurl + endpoint and API communication is performed.
 
 ### To import initial data
-``` bash
+
+```bash
 $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
 ```
 
