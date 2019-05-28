@@ -225,7 +225,7 @@ $ docker-compose run -p 8000:8020 web python manage.py loaddata seed_data.json
         }
     ],
     "total_count": 6347,
-    "page": 1
+    "limit": 5
 }
 ```
 
